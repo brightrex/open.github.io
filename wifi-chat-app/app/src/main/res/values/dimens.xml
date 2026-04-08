@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="corner_card">20dp</dimen>
+    <dimen name="corner_bubble">16dp</dimen>
+    <dimen name="corner_button">14dp</dimen>
+    <dimen name="padding_screen">20dp</dimen>
+    <dimen name="padding_card">22dp</dimen>
+    <dimen name="padding_bubble">12dp</dimen>
+    <dimen name="size_avatar">44dp</dimen>
+    <dimen name="size_send_btn">48dp</dimen>
+</resources>

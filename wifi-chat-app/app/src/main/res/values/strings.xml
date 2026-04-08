@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AuraLink</string>
+    <string name="tagline">WiFi Chat — No Internet Needed</string>
+    <string name="hint_username">Enter your name…</string>
+    <string name="btn_start">Start Chatting</string>
+    <string name="searching">Searching for devices…</string>
+    <string name="no_devices">No devices found nearby.\nMake sure others have AuraLink open\non the same WiFi network.</string>
+    <string name="type_message">Type a message…</string>
+    <string name="connecting">● Connecting…</string>
+    <string name="nearby_devices">Nearby Devices</string>
+</resources>
