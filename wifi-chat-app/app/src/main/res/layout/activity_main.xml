@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <!-- Decorative glow — top right -->
+    <View
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="-80dp"
+        android:alpha="0.4"
+        android:background="@drawable/bg_glow_purple" />
+
+    <!-- Decorative glow — bottom left -->
+    <View
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="-60dp"
+        android:layout_marginStart="-60dp"
+        android:alpha="0.3"
+        android:background="@drawable/bg_glow_blue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp">
+
+        <!-- App Icon -->
+        <FrameLayout
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_app_icon"
+            android:elevation="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="✦"
+                android:textSize="32sp"
+                android:textColor="#FFFFFF" />
+        </FrameLayout>
+
+        <!-- App Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AuraLink"
+            android:textSize="40sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="-0.02"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tagline"
+            android:textSize="13sp"
+            android:textColor="#6B7FA0"
+            android:letterSpacing="0.04"
+            android:layout_marginBottom="44dp" />
+
+        <!-- Glass Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="@drawable/bg_glass_card"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR NAME"
+                android:textSize="11sp"
+                android:textColor="#6B7FA0"
+                android:letterSpacing="0.14"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_input_field"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#3D4F66"
+                android:hint="@string/hint_username"
+                android:textSize="16sp"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:layout_marginBottom="14dp" />
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="@string/btn_start"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.02"
+                android:background="@drawable/bg_button_primary"
+                android:stateListAnimator="@null"
+                android:elevation="0dp" />
+        </LinearLayout>
+
+        <!-- Hint -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect with anyone on the same WiFi"
+            android:textSize="12sp"
+            android:textColor="#3D4F66"
+            android:layout_marginTop="22dp" />
+    </LinearLayout>
+</FrameLayout>
